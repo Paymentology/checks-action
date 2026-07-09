@@ -63,7 +63,7 @@ You can solve this in multiple ways:
 
 - Increase the permissions given to `GITHUB_TOKEN` (see [issue](https://github.com/actions/first-interaction/issues/10#issuecomment-1232740076)),
   please note that you should understand the security implications of this change
-- Use a Github App token instead of a `GITHUB_TOKEN` (see [issue](https://github.com/LouisBrunner/checks-action/issues/26#issuecomment-1232948025))
+- Use a GitHub App token instead of a `GITHUB_TOKEN` (see [issue](https://github.com/LouisBrunner/checks-action/issues/26#issuecomment-1232948025))
 
 Most of the time, it means setting up your workflow this way:
 
@@ -138,7 +138,7 @@ Note that this will override `details_url` (see next) when `conclusion` is `acti
 
 ### `details_url`
 
-_Optional_ A URL with more details about your check, can be an third-party website, a preview of the changes to your Github Pages, etc
+_Optional_ A URL with more details about your check, can be an third-party site, a preview of the changes to your GitHub Pages, etc
 
 Note that this will be overridden by `action_url` (see previous) when `conclusion` is `action_required` or when `actions` is provided (the two inputs set the same check attribute, `details_url`)
 
@@ -156,7 +156,7 @@ See [Check Runs API](https://developer.github.com/v3/checks/runs/#output-object)
 
 ### `output_text_description_file`
 
-_Optional_ Path to a file containing text which should be set as the `text_description` property of `output`'. Can contain plain text or markdown.
+_Optional_ Path to a file containing text which should be set as the `text_description` property of `output`'. Can contain plain text or Markdown.
 
 Note that this will be ignored if `output` is not provided. When `output` is provided with a text_description, this input will take precedence and override it.
 
